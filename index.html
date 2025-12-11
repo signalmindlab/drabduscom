@@ -104,6 +104,21 @@
       html[data-theme="dark"] em {
         color: #c0c0c0 !important;
       }
+      /* newly added */
+      /* Profile Picture Sizing */
+.profile-container {
+  padding: 2.5%;
+  width: 40%;
+  max-width: 40%;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 250px;  /* Adjust this value to match drabdus.info */
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
     </style>
   </head>
 
@@ -134,8 +149,11 @@
                   <a href="https://www.youtube.com/@drabdus">YouTube</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
+              <!-- <td style="padding:2.5%;width:37%;max-width:37%">
                 <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
+              </td> -->
+              <td class="profile-container">
+                  <a href="images/profile.jpg"><img class="profile-img" alt="profile photo" src="images/profile.jpg"></a>
               </td>
             </tr>
           </tbody></table>
